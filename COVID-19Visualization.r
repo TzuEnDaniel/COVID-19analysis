@@ -3,7 +3,7 @@ library(ggplot2)
 library(dplyr)
 
 # Read datasets/confirmed_cases_worldwide.csv into confirmed_cases_worldwide
-confirmed_cases_worldwide <-read_csv("C:\\Users\\CloudMosa\\Documents\\GitHub\\COVID-19analysis\\COVID-19analysis\\datasets\\confirmed_cases_worldwide.csv")
+confirmed_cases_worldwide <-read_csv("confirmed_cases_worldwide.csv")
 
 # See the result
 confirmed_cases_worldwide
@@ -14,7 +14,8 @@ ggplot(confirmed_cases_worldwide,aes(date,cum_cases))+
   geom_line()+
   labs(y = "Cumulative confirmed cases")
 
-confirmed_cases_china_vs_world <- read_csv("C:\\Users\\CloudMosa\\Documents\\GitHub\\COVID-19analysis\\COVID-19analysis\\datasets\\confirmed_cases_china_vs_world.csv")
+confirmed_cases_china_vs_world <-
+  read_csv("confirmed_cases_china_vs_world.csv")
 
 # See the result
 confirmed_cases_china_vs_world
